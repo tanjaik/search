@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.wotif.com/" />
+<title>search01</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">search01</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/?lid=places-beta&amp;utm_expid=60784533-11.MYmjPJQdSJa6MHztR5cHXg.1&amp;utm_referrer=http%3A%2F%2Fwww.wotif.com%2Fsearch%2Fresults%3Fdestinations%3D%26searchTerms%3DBangkok%2BChinatown%26previousSearchTerms%3DBangkok%2BChinatown%26descriptionSearch%3Dtrue%26hotel%3D%26country%3D%26region%3D%26destination%3D%26adults%3D2%26children%3D0%26refine%3DSearch%26accommodationTypeMatch%3D%26roomTypeCategoryMatch%3D%26starRatingMatch%3D%26maximumPrice%3D999999999999999999999%26selectedSuggestionId%3D%26startDay%3D2014-06-30%26formSearch%3Dtrue%26page%3D1%26viewType%3Dall</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Wotif.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=freetext-field</td>
+	<td>Bangkok Chinatown</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=freetext-field</td>
+	<td>Bangkok Chinatown</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=search-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=search-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.crumbtrail-wrapper.crumb-levels1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=maximumPrice</td>
+	<td>9999999999999999999999999999</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=maximumPrice</td>
+	<td>9999999999999999999999999999</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=search-btn</td>
+	<td>Search</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=search-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.crumbtrail-wrapper.crumb-levels1</td>
+	<td>Accommodation Search for Bangkok Chinatown Bangkok</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=i.results-count.results-count--staticmap</td>
+	<td>Found 18 results</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#map-button &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table/thead/tr/th/div/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.2.0</td>
+	<td>Chatrium Hotel Riverside Bangkok 4.5 from 28<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.3.0</td>
+	<td>Le Meridien Bangkok 4.3 from 17<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.4.0</td>
+	<td>Metropolitan Bangkok</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.5.0</td>
+	<td>Praya Palazzo 4.7 from 4<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.6.0</td>
+	<td>Swissotel Le Concorde Bangkok 4.4 from 18<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#property-M2502 &gt; th.hotel-name.review-scores &gt; div.hotel-actions &gt; div.details.cf &gt; span.hotel-name &gt; a.name &gt; h3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.9.0</td>
+	<td>Bangkok Centre Hotel 3.1 from 5<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.10.0</td>
+	<td>Grand China Hotel 4.3 from 4<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.11.0</td>
+	<td>MIRAMAR Hotel Bangkok 2.9 from 5<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.12.0</td>
+	<td>Shanghai Mansion 4.2 from 8<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.13.0</td>
+	<td>Urbana Langsuan Bangkok 3.7 from 7<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.15.0</td>
+	<td>At Hua Lamphong</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.16.0</td>
+	<td>Sabye Bangkok Hotel</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.18.0</td>
+	<td>Chinatown Hotel Bangkok 2.8 from 3<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.19.0</td>
+	<td>Rikka Inn 3.6 from 13<br /> reviews</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='matrix-results']/div/div/div[3]/table.20.0</td>
+	<td>The Park Residence @Bangkok</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#property-W552241 &gt; th.hotel-name.review-scores &gt; div.hotel-actions &gt; div.details.cf &gt; span.hotel-name &gt; a.name &gt; h3</td>
+	<td>Loftel22 Hostel</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=#property-W66366 &gt; th.hotel-name.review-scores &gt; div.hotel-actions &gt; div.details.cf &gt; span.hotel-name &gt; a.name &gt; h3</td>
+	<td>River View Guest House</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Wotif.com: hotels, accommodation, motels, serviced apartments, B&amp;B - Online hotel bookings with instant confirmation - select your hotel at Wotif.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[2]/a/strong</td>
+	<td>Help</td>
+</tr>
+</tbody></table>
+</body>
+</html>
